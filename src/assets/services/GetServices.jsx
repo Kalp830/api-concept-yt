@@ -5,5 +5,5 @@ const api = axios.create({
 })
 
 export const getMovie = () => {
-    return api.get("?s=iron&apikey=61ca2fdb")
+    return api.get("?s=fast&apikey=61ca2fdb")
 };
