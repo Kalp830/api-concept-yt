@@ -1,12 +1,14 @@
 
 import Movie from "./assets/pages/Movie";
+import State from "./hooks/State";
 
 
 
 function App() {
   return (
     <>
-      <Movie />
+      {/* <Movie /> */}
+      <State/>
     </>
   );
 }

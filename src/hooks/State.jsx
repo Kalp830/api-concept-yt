@@ -1,0 +1,28 @@
+import React, { useState } from 'react'
+
+const State = () => {
+  const [count, setCount] =  useState(0);
+  const addValue = () =>{
+    setCount(count + 1);
+  }
+ 
+  return (
+    <>
+      <h2>State works in depth</h2>
+      <h1>{count}</h1>
+      <button onClick={addValue}>Add Count</button>
+      <Childcomponent />
+    </>
+  )
+}
+
+export default State;
+
+  export const Childcomponent = () =>{
+    console.log("Child Component Render")
+      return(
+        <>
+        <div>Div Component</div>
+        </>
+      )
+  }
