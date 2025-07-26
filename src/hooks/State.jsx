@@ -11,18 +11,18 @@ const State = () => {
       <h2>State works in depth</h2>
       <h1>{count}</h1>
       <button onClick={addValue}>Add Count</button>
-      <Childcomponent />
+      <Childcomponent count={count} />
     </>
   )
 }
 
 export default State;
 
-  export const Childcomponent = () =>{
+  export const Childcomponent = ({count}) =>{
     console.log("Child Component Render")
       return(
         <>
-        <div>Div Component</div>
+          <div>Child Component - { count}</div>
         </>
       )
   }

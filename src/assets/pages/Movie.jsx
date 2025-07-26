@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Dropdown } from "react-bootstrap";
 import ListCard from "../../components/UI/ListCard";
 import { getMovie } from "../services/GetServices";
-import DatePicker from "react-datepicker";
+
 
 const Movie = () => {
   const [data, setData] = useState([]);
